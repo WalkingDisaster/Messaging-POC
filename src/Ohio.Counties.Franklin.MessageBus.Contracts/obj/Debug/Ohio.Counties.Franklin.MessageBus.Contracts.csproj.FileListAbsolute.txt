@@ -1,0 +1,5 @@
+c:\Projects\MessagingPOC\src\Ohio.Counties.Franklin.MessageBus.Contracts\bin\Debug\Ohio.Counties.Franklin.MessageBus.Contracts.dll
+c:\Projects\MessagingPOC\src\Ohio.Counties.Franklin.MessageBus.Contracts\bin\Debug\Ohio.Counties.Franklin.MessageBus.Contracts.pdb
+c:\Projects\MessagingPOC\src\Ohio.Counties.Franklin.MessageBus.Contracts\obj\Debug\ResolveAssemblyReference.cache
+c:\Projects\MessagingPOC\src\Ohio.Counties.Franklin.MessageBus.Contracts\obj\Debug\Ohio.Counties.Franklin.MessageBus.Contracts.dll
+c:\Projects\MessagingPOC\src\Ohio.Counties.Franklin.MessageBus.Contracts\obj\Debug\Ohio.Counties.Franklin.MessageBus.Contracts.pdb
