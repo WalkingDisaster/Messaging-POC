@@ -1,5 +1,10 @@
-packages/
-bin/
+_ReSharper*/
+*.resharper
+
+*.suo
+*.user
+
 obj/
-.suo
-_ReSharper.
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
