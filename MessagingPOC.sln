@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.Mess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client1", "src\Ohio.Counties.Franklin.MessageBus.Client1\Ohio.Counties.Franklin.MessageBus.Client1.csproj", "{DD5220E0-9804-44EB-BDE5-6F16C717671D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client2", "src\Ohio.Counties.Franklin.MessageBus.Client2\Ohio.Counties.Franklin.MessageBus.Client2.csproj", "{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client3", "src\Ohio.Counties.Franklin.MessageBus.Client3\Ohio.Counties.Franklin.MessageBus.Client3.csproj", "{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Configuration", "src\Ohio.Counties.Franklin.MessageBus.Configuration\Ohio.Counties.Franklin.MessageBus.Configuration.csproj", "{446CD7A9-16B6-4F84-8099-320E6E285550}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client2", "Ohio.Counties.Franklin.MessageBus.Client2\Ohio.Counties.Franklin.MessageBus.Client2.csproj", "{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client3", "Ohio.Counties.Franklin.MessageBus.Client3\Ohio.Counties.Franklin.MessageBus.Client3.csproj", "{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
