@@ -12,11 +12,22 @@ namespace Ohio.Counties.Franklin.MessageBus.Client1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, System.EventArgs e)
+        private void SendCommand_Click(object sender, System.EventArgs e)
         {
-            var message = textBox1.Text;
+            var userName = UserNameInput.Text;
+            var oldName = OriginalNameInput.Text;
+            var newName = NewNameInput.Text;
             var bus = ObjectFactory.GetInstance<IServiceBus>();
-            bus.Publish(new TextChanged(message));
+            if (!string.IsNullOrEmpty(newName.Trim()))
+            {
+                bus.Publish(new NameChanged(oldName, newName, userName));
+            }
+
+            decimal income;
+            if (decimal.TryParse(IncomeInput.Text, out income))
+            {
+                bus.Publish(new IncomeChangeRequest(string.IsNullOrEmpty(oldName) ? newName : oldName, income, userName));
+            }
         }
     }
 }

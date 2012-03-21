@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.Mess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Configuration", "src\Ohio.Counties.Franklin.MessageBus.Configuration\Ohio.Counties.Franklin.MessageBus.Configuration.csproj", "{446CD7A9-16B6-4F84-8099-320E6E285550}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client2", "Ohio.Counties.Franklin.MessageBus.Client2\Ohio.Counties.Franklin.MessageBus.Client2.csproj", "{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohio.Counties.Franklin.MessageBus.Client3", "Ohio.Counties.Franklin.MessageBus.Client3\Ohio.Counties.Franklin.MessageBus.Client3.csproj", "{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,26 @@ Global
 		{446CD7A9-16B6-4F84-8099-320E6E285550}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{446CD7A9-16B6-4F84-8099-320E6E285550}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{446CD7A9-16B6-4F84-8099-320E6E285550}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Debug|x86.ActiveCfg = Debug|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Debug|x86.Build.0 = Debug|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Release|Any CPU.ActiveCfg = Release|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Release|x86.ActiveCfg = Release|x86
+		{D2EEA61D-BB0C-4DCC-9014-CB5B5C08563D}.Release|x86.Build.0 = Release|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Debug|x86.ActiveCfg = Debug|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Debug|x86.Build.0 = Debug|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Release|Any CPU.ActiveCfg = Release|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Release|x86.ActiveCfg = Release|x86
+		{0F8CE6EB-624A-4BDC-84D4-37771DBA0FA7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
