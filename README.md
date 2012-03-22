@@ -1,4 +1,5 @@
 This is a proof of concept demonstrating a few things:
+
  * Mass Transit with RabbitMQ
  * Peer to Peer messaging
  * Process facilitated by Sagas (persisted using NHibernate)
