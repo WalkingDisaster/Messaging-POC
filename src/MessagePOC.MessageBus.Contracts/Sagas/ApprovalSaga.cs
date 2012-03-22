@@ -14,6 +14,7 @@ namespace MessagePOC.MessageBus.Contracts.Sagas
                        {
                            Correlate(ChangeRequested).By((saga, message) => saga.CorrelationId == message.CorrelationId);
                            Correlate(ChangeApproved).By((saga, message) => saga.CorrelationId == message.CorrelationId);
+                           Correlate(ChangeRejected).By((saga, message) => saga.CorrelationId == message.CorrelationId);
 
                            Initially(
                                When(ChangeRequested)
@@ -22,6 +23,10 @@ namespace MessagePOC.MessageBus.Contracts.Sagas
 
                            During(ApprovalPending, When(ChangeApproved)
                                .Then((saga, message) => saga.Approve(message))
+                               .TransitionTo(Completed));
+
+                           During(ApprovalPending, When(ChangeRejected)
+                               .Then((saga, message) => saga.Reject(message))
                                .TransitionTo(Completed));
                        });
         }
@@ -40,6 +45,8 @@ namespace MessagePOC.MessageBus.Contracts.Sagas
         private bool? _approved;
         private string _changedBy;
         private DateTime _changedOn;
+        private string _reviewedBy;
+        private DateTime? _reviewedOn;
 
         // persisted properties (not lazy loaded, so doesn't have to be virtual)
         public Guid CorrelationId { get { return _correlationId; }}
@@ -48,10 +55,13 @@ namespace MessagePOC.MessageBus.Contracts.Sagas
         public bool? Approved { get { return _approved; } }
         public string ChangedBy { get { return _changedBy; } }
         public DateTime ChangedOn { get { return _changedOn; } }
+        public string ReviewedBy { get { return _reviewedBy; } }
+        public DateTime? ReviewedOn { get { return _reviewedOn; } }
 
         // EVENTS //
         public static Event<IncomeChangeRequest> ChangeRequested { get; set; }
         public static Event<IncomeChangeApproval> ChangeApproved { get; set; }
+        public static Event<IncomeChangeRejection> ChangeRejected { get; set; }
 
         // CONSTRUCTORS //
         public ApprovalSaga()
@@ -77,13 +87,16 @@ namespace MessagePOC.MessageBus.Contracts.Sagas
        public void Approve(IncomeChangeApproval approval)
         {
             _approved = true;
+            _reviewedBy = approval.ChangedBy;
+            _reviewedOn = approval.ChangedOn;
             Bus.Publish(new IncomeChange(CorrelationId, Name, Income, approval.ChangedBy));
         }
 
-        public void Reject(string reviewer)
+        public void Reject(IncomeChangeRejection rejection)
         {
             _approved = false;
-            _changedBy = reviewer;
+            _reviewedBy = rejection.ChangedBy;
+            _reviewedOn = rejection.ChangedOn;
         }
 
         public override string ToString()

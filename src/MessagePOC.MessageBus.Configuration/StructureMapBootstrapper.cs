@@ -8,7 +8,7 @@ namespace MessagePOC.MessageBus.Configuration
          {
              ObjectFactory.Initialize(x => x.Scan(s =>
                                                   {
-                                                      s.AssembliesFromApplicationBaseDirectory(y => y.FullName.StartsWith("Ohio"));
+                                                      s.AssembliesFromApplicationBaseDirectory(y => y.FullName.StartsWith("MessagePOC"));
                                                       s.WithDefaultConventions();
                                                       s.LookForRegistries();
                                                   }));

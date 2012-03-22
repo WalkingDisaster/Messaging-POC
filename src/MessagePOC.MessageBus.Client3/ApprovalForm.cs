@@ -77,6 +77,16 @@ namespace MessagePOC.MessageBus.Client3
             ReloadValues();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var items = listBox1.SelectedItems.Cast<ApprovalSaga>();
+            foreach (var item in items)
+            {
+                bus.Publish(new IncomeChangeRejection(item.CorrelationId, UserNameInput.Text));
+            }
+            ReloadValues();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             ReloadValues();

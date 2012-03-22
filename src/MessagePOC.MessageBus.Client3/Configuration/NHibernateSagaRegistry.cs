@@ -18,7 +18,7 @@ namespace MessagePOC.MessageBus.Client3.Configuration
              For<ISessionFactory>().Use(() => Fluently.Configure()
                                                   .Database(
                                                       MsSqlConfiguration.MsSql2008
-                                                          .ConnectionString("Server=(local);initial catalog=test;Trusted_Connection=yes")
+                                                          .ConnectionString("Server=(local);initial catalog=MessagePOC;Trusted_Connection=yes")
                                                           .DefaultSchema("DBO")
                                                           .Raw(NHibernate.Cfg.Environment.Isolation, IsolationLevel.Serializable.ToString()))
                                                   .ProxyFactoryFactory("NHibernate.Bytecode.DefaultProxyFactoryFactory, NHibernate")

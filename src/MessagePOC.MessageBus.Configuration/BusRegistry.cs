@@ -13,7 +13,7 @@ namespace MessagePOC.MessageBus.Configuration
 
             Scan(x =>
                      {
-                         x.AssembliesFromApplicationBaseDirectory(y => y.FullName.StartsWith("Ohio"));
+                         x.AssembliesFromApplicationBaseDirectory(y => y.FullName.StartsWith("MessagePOC"));
                          x.AddAllTypesOf<IConsumer>();
                      });
         }

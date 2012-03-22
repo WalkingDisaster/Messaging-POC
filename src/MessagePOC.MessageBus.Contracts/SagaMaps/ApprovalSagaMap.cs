@@ -16,6 +16,8 @@ namespace MessagePOC.MessageBus.Contracts.SagaMaps
              Map(x => x.Approved).Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore);
              Map(x => x.ChangedBy).Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore);
              Map(x => x.ChangedOn).Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore);
+             Map(x => x.ReviewedBy).Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore);
+             Map(x => x.ReviewedOn).Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore);
 
              Map(x => x.CurrentState)
                  .Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore)
